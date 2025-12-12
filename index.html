@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Modules Nuke</title>
+    <!-- Content Security Policy to secure the app -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="title-bar">Node Modules Nuke</div>
+            <div class="control-panel">
+                <button id="select-dir-btn" class="btn primary">Select Directory</button>
+                <div class="stats">
+                    <span id="total-size">0 MB</span> found
+                </div>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <div id="scan-status" class="status-message hidden">
+                <div class="nuclear-spinner">☢️</div>
+                <div>Scanning sector...</div>
+            </div>
+            <div class="list-header hidden" id="list-header">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="select-all">
+                    <span class="checkmark"></span>
+                </label>
+                <span class="col-path sortable" data-sort="path">Path <span>↕</span></span>
+                <span class="col-size sortable" data-sort="sizeBytes">Size <span>↕</span></span>
+            </div>
+            <ul id="modules-list" class="modules-list">
+                <!-- List items will be injected here -->
+            </ul>
+        </main>
+
+        <footer class="app-footer">
+            <button id="nuke-btn" class="btn danger" disabled>NUKE SELECTED</button>
+        </footer>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

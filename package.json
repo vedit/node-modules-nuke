@@ -1,0 +1,32 @@
+{
+  "name": "modules-nuke",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "A tool to nuke node_modules folders",
+  "author": "veditoid",
+  "repository": "github:veditoid/node-modules-nuke",
+  "build": {
+    "appId": "com.veditoid.nodemodulesnuke",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^39.2.6",
+    "electron-builder": "^26.0.12"
+  }
+}
