@@ -1,6 +1,6 @@
 {
   "name": "modules-nuke",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "main.js",
   "description": "A tool to nuke node_modules folders",
   "author": "vedit",
