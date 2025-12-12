@@ -1,6 +1,6 @@
 {
   "name": "modules-nuke",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "main.js",
   "description": "A tool to nuke node_modules folders",
   "author": "vedit",
@@ -16,6 +16,11 @@
     },
     "linux": {
       "target": "AppImage"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "vedit",
+      "repo": "node-modules-nuke"
     }
   },
   "scripts": {
