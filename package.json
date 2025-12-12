@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "main.js",
   "description": "A tool to nuke node_modules folders",
-  "author": "veditoid",
-  "repository": "github:veditoid/node-modules-nuke",
+  "author": "vedit",
+  "repository": "github:vedit/node-modules-nuke",
   "build": {
-    "appId": "com.veditoid.nodemodulesnuke",
+    "appId": "com.vedit.nodemodulesnuke",
     "mac": {
       "category": "public.app-category.developer-tools",
       "target": "dmg"
